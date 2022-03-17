@@ -1,0 +1,186 @@
+
+
+.header-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-item{
+    
+    list-style: none;
+    
+}
+
+.header-item__link{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+  
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #343434;
+    text-decoration: none;
+}
+
+
+.header-tel{
+    text-decoration: none;
+}
+
+.header-item__lang{
+    margin-right: 32px;
+    background-color: transparent;
+    border: none;
+}
+
+
+// nav
+
+.nav-items{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.nav-item{
+    list-style: none;
+
+}
+.nav-item__link{
+    text-decoration: none;
+}
+
+
+
+.nav-description{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    /* or 20px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #343434;
+
+    &:hover{
+        color: #FF9619;
+    }
+}
+
+.nav__wrap{
+    margin-right: 32px;
+    background-color: transparent;
+    border: none;
+}
+
+.header-mobile{
+    display: none;
+}
+
+// menyu
+
+.menyu{
+    z-index: 100;
+}
+
+.close{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.menyu{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 240px;
+    background-color: #FFFFFF;
+}
+
+.menyu__items{
+    list-style: none;
+    margin: 0;
+    padding: 28px 20px 25px 20px;
+
+}
+
+.menyu__item + .menyu__item{
+    margin-top: 15px;
+}
+.menyu__item__link{
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 135%;
+    /* or 23px */
+
+    // display: flex;
+    // align-items: center;
+    text-transform: capitalize;
+
+    color: #4B4844;
+
+    &:hover{
+        color: #FF9619;
+    }
+}
+
+
+
+
+
+// media 375 px mobile
+
+@media only screen and (max-width: 376px){
+
+    // .open{
+    //     display: block;
+    // }
+
+    // menyuni qo'shish uchun open classini yoqish 
+
+    .container{
+        padding: 0 19px;
+    }
+
+    .logo{
+        width: 111px;
+        height: 34px;
+    }
+    .header,
+    .nav{
+        display: none;
+    }
+
+   
+    .header-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 14px;
+    }
+    
+    .header-mobile__button{
+        display: flex;
+        background-color: transparent;
+        border: none;
+    }
+
+    
+
+    
+}

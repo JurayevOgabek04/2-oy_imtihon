@@ -1,0 +1,148 @@
+.information{
+    margin-top: 150px;
+}
+
+.information-wrap{
+    border: 1px solid rgba(52, 52, 52, 0.2);
+    box-sizing: border-box;
+}
+
+
+.information__items{
+    list-style: none;
+    padding: 47px 27px 47px 90px;
+}
+
+.information__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(/images/Ellipse.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 9px;
+        height: 9px;
+        left: -20px;
+    }
+}
+
+.information__item__title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 127.5%;
+    /* or 20px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+
+    color: #343434;
+}
+
+.information__item__description{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 127.5%;
+    /* or 18px */
+
+    letter-spacing: 0.1em;
+
+    color: #343434;
+    width: 75%;
+    
+}
+
+.information__link{
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 127.5%;
+    letter-spacing: 0.1em;
+    border: none;
+    color: #343434;
+    background-color: transparent;
+    text-decoration: none;
+
+}
+
+.information__links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.information__links__block{
+    background-color: #F2F3F5;
+    border: 1px solid rgba(52, 52, 52, 0.2);
+    box-sizing: border-box;
+    width: 34%;
+
+    display: flex;
+    justify-content: center;
+    padding: 29px 0;
+    &:active{
+        border: none;
+        background-color: transparent;
+    }
+}
+
+.information__btn{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 150%;
+    /* or 27px */
+
+    padding: 17px 32px 14px 33px;
+    border: none;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background-color: #FF9619;
+
+    display: flex;
+    margin-top: 25px;
+    margin-left: auto;
+}
+
+// media 375px mobile
+
+@media only screen and (max-width: 376px){
+    .information__links{
+        display: block;
+    }
+
+    .information__items{
+        display: none;
+    }
+
+    .information__links__block{
+        width: 100%;
+    }
+
+    .information__link{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            background-image: url(/images/strelka.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 13px;
+            height: 8px;
+            top: 7px;
+            right: -15px;
+        }
+    }
+}

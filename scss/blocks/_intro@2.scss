@@ -1,0 +1,32 @@
+.about{
+    margin-top: 150px;
+}
+
+.about__items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+// media 375 px mobile
+
+
+@media only screen and (max-width: 376px){
+    .about__items:nth-child(2){
+        display: none;
+    }
+
+    .about__item:nth-child(3),
+    .about__item:nth-child(4){
+        display: none;
+    }
+
+    .about__item:nth-child(2){
+        margin-top: 10px;
+    }
+}
+
+

@@ -1,0 +1,76 @@
+.inner{
+    margin-top: 150px;
+}
+
+.inner__button{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.inner__btn{
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: capitalize;
+    color: #343434;
+   
+
+}
+
+.inner__buttton__block{
+
+    padding: 45px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FF9619;
+}
+.inner__buttton__block:nth-child(1) > .inner__btn{
+    position: relative;
+    &::after{
+        position: absolute;
+        content: "";
+        background-image: url(/images/ckachat.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 32px;
+        height: 32px;
+        right: -50px;
+    }
+}
+
+// media 375 px mobile
+
+@media only screen and (max-width: 376px){
+    .inner__btn{
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .inner__buttton__block{
+        padding: 14px 16px;
+    }
+
+    .inner__buttton__block:nth-child(1) > .inner__btn{
+        padding-right: 30px;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            background-image: url(/images/ckachat.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 17px;
+            height: 17px;
+            right: -10px;
+        }
+    }
+}
+
